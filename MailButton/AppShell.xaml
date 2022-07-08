@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MailButton.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MailButton"
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <Tab Title="Principal">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Add Message Button">
+            <ShellContent Title="New Message Button" ContentTemplate="{DataTemplate local:Pages.Message.CreatePage}" />
+        </Tab>
+    </TabBar>
+    
+
+</Shell>
